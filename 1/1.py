@@ -39,5 +39,3 @@ def main():
     print(answer)
 
 main()
-
-
