@@ -1,14 +1,13 @@
 import string
 
-letters = string.ascii_lowercase
-
 def open_file_and_populate_list():
-    file = open("data.txt", "r")
+    file = open(f"data.txt", "r")
     lines = file.readlines()
     return lines
 
 def sanitize_data(lines):
     initial_nums = []
+    letters = string.ascii_lowercase
     for line in lines:
         for i in range(len(line)):
             for letter in letters:
